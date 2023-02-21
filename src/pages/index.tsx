@@ -1,7 +1,7 @@
-import Footer from '@/components/Footers/Footer';
+import Footer from '@/components/Footer';
 import InterestForm from '@/components/Forms/InterestForm';
-import LandingPageHeader from '@/components/Headers/LandingPageHeader';
-import IndexNavbar from '@/components/Navbars/IndexNavbar';
+import IndexBanner from '@/components/IndexBanner';
+import IndexNavbar from '@/components/IndexNavbar';
 import Head from 'next/head';
 import React from 'react';
 
@@ -27,7 +27,7 @@ function LandingPage() {
       </Head>
 
       <IndexNavbar />
-      <LandingPageHeader />
+      <IndexBanner />
 
       <div className="main">
         <div className="section landing-section">
