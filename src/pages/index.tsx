@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import InterestForm from '@/components/Forms/InterestForm';
+import IndexAbout from '@/components/IndexAbout';
 import IndexBanner from '@/components/IndexBanner';
 import IndexNavbar from '@/components/IndexNavbar';
 import Head from 'next/head';
@@ -28,6 +29,7 @@ function LandingPage() {
 
       <IndexNavbar />
       <IndexBanner />
+      <IndexAbout />
 
       <div className="main">
         <div className="section landing-section">
