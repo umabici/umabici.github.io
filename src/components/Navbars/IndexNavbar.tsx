@@ -101,6 +101,17 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
+                href="https://www.youtube.com/@umabici"
+                target="_blank"
+                title="Acompanhe no YouTube"
+              >
+                <i className="fa fa-youtube" />
+                <p className="d-lg-none">YouTube</p>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
                 href="https://www.github.com/umabici"
                 target="_blank"
                 title="Dê uma estrela no GitHub"

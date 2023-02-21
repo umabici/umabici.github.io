@@ -21,24 +21,10 @@ import LandingPageHeader from '@/components/Headers/LandingPageHeader';
 
 // core components
 import IndexNavbar from '@/components/Navbars/IndexNavbar';
+import Head from 'next/head';
 import React from 'react';
 
 // reactstrap components
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  Col,
-  Container,
-  Form,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Row
-} from 'reactstrap';
 
 function LandingPage() {
   React.useEffect(() => {
@@ -50,6 +36,16 @@ function LandingPage() {
   });
   return (
     <>
+      <Head>
+        <title>Uma bici 🚲</title>
+        <meta name="author" content="Francis Targanski & Marcelo Luiz Onhate" />
+        <meta
+          name="description"
+          content="Propomos um emocionante experimento que irá envolver pessoas de diferentes cidades. O objetivo é realizar um revezamento pedalando em uma única bicicleta, passando por várias localidades."
+        />
+        <meta name="keywords" content="bicicleta, desafio, união, jornada, revezamento, bike, bici" />
+      </Head>
+
       <IndexNavbar />
       <LandingPageHeader />
       {/*<div className="main">*/}
