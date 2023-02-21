@@ -1,30 +1,8 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Footer from '@/components/Footers/Footer';
 import LandingPageHeader from '@/components/Headers/LandingPageHeader';
-
-// core components
 import IndexNavbar from '@/components/Navbars/IndexNavbar';
 import Head from 'next/head';
 import React from 'react';
-
-// reactstrap components
 
 function LandingPage() {
   React.useEffect(() => {
@@ -37,13 +15,14 @@ function LandingPage() {
   return (
     <>
       <Head>
-        <title>Uma bici 🚲</title>
-        <meta name="author" content="Francis Targanski & Marcelo Luiz Onhate" />
+        <title>Uma bici 🚲⛰️</title>
+        <meta name="author" content="Francis Targanski" />
+        <meta name="author" content="Marcelo Luiz Onhate" />
         <meta
           name="description"
-          content="Propomos um emocionante experimento que irá envolver pessoas de diferentes cidades. O objetivo é realizar um revezamento pedalando em uma única bicicleta, passando por várias localidades."
+          content="Um emocionante experimento que irá envolver pessoas de diferentes cidades, um revezamento pedalando em uma única bicicleta, passando por várias localidades."
         />
-        <meta name="keywords" content="bicicleta, desafio, união, jornada, revezamento, bike, bici" />
+        <meta name="keywords" content="bicicleta, desafio, união, jornada, revezamento, mountain, bike, bici, MTB" />
       </Head>
 
       <IndexNavbar />

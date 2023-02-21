@@ -1,27 +1,5 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from 'react';
-
-// reactstrap components
 import { Container } from 'reactstrap';
-
-// core components
 
 function LandingPageHeader() {
   let pageHeader = React.createRef<any>();
@@ -53,7 +31,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <img src="/img/logo-white.svg" height={120} width={120} />
+            <img alt="Uma bici, várias histórias." src="/img/logo-white.svg" height={120} width={120} />
             <h1>Uma bici, várias histórias</h1>
           </div>
         </Container>
