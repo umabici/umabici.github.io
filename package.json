@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +23,7 @@
     "moment": "2.29.4",
     "next": "13.1.6",
     "next-pwa": "^5.6.0",
+    "next-sitemap": "^3.1.52",
     "nouislider": "14.5.0",
     "react": "18.2.0",
     "react-datetime": "3.1.1",
