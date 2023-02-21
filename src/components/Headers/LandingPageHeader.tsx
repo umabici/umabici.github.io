@@ -19,7 +19,7 @@
 import React from 'react';
 
 // reactstrap components
-import { Button, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 // core components
 
@@ -44,7 +44,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: 'url(/img/daniel-olahh.jpg)'
+          backgroundImage: 'url(https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-4.0.3&dl=mikkel-bech-yjAFnkLtKY0-unsplash.jpg&w=1920&q=80&fm=jpg&crop=entropy&cs=tinysrgb)'
         }}
         className="page-header"
         data-parallax={true}
@@ -53,22 +53,8 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
-            <br />
-            <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button>
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Download
-            </Button>
+            <img src="/img/logo-white.svg" height={120} width={120} />
+            <h1>Uma bici, várias histórias</h1>
           </div>
         </Container>
       </div>
