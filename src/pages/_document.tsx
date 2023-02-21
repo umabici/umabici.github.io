@@ -40,6 +40,17 @@ export default function Document() {
         <meta property="og:site_name" content="Uma bici" />
         <meta property="og:url" content="https://umabici.com" />
         <meta property="og:image" content="https://umabici.com/icons/apple-touch-icon.png" />
+
+        {/*Google tag (gtag.js)*/}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZL3TCPXP3"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8ZL3TCPXP3');`
+          }}
+        />
       </Head>
       <body>
       <Main />
