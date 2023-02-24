@@ -38,6 +38,7 @@ function IndexBanner() {
   return (
     <>
       <div
+        id="home"
         style={{ backgroundImage: 'url(/img/background.png)' }}
         className="page-header"
         data-parallax={true}

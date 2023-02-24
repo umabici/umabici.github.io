@@ -5,7 +5,7 @@ export default function IndexAbout() {
         <div className="container">
           <div className="row">
             <div className="ml-auto mr-auto col-md-8">
-              <h2 className="title">O que é o Uma bici?</h2>
+              <h2 className="title" id="sobre">O que é o Uma bici?</h2>
               <p className="description">
                 Propomos um emocionante experimento que irá envolver pessoas de diferentes cidades do sul ao norte de
                 Santa Catarina. O objetivo é realizar um revezamento pedalando em uma única bicicleta, passando por
@@ -25,7 +25,7 @@ export default function IndexAbout() {
         <div className="container">
           <div className="row">
             <div className="ml-auto mr-auto col-md-8">
-              <h2 className="title">Porque?</h2>
+              <h2 className="title" id="porque">Porque?</h2>
               <p className="description">
                 Acreditamos que este projeto promoverá o incentivo ao esporte, o turismo sustentável e a união entre as
                 pessoas de diferentes regiões do estado. Além disso, é uma oportunidade para divulgar as belezas

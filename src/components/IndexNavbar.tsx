@@ -1,17 +1,16 @@
 import classnames from 'classnames';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Collapse, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink } from 'reactstrap';
 
 function IndexNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = useState('navbar-transparent');
+  const [navbarCollapse, setNavbarCollapse] = useState(false);
 
-  const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
+  const toggleNavbar = () => {
     document.documentElement.classList.toggle('nav-open');
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 299 ||
@@ -42,29 +41,34 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/"
+            href="#home"
             title="Coded by Uma Bici"
           >
             Uma Bici
           </NavbarBrand>
           <button
-            aria-expanded={navbarCollapse}
-            className={classnames('navbar-toggler navbar-toggler', {
-              toggled: navbarCollapse
-            })}
-            onClick={toggleNavbarCollapse}
+            className={classnames('navbar-toggler navbar-toggler')}
+            onClick={toggleNavbar}
           >
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <Collapse
-          className="justify-content-end"
-          navbar
-          isOpen={navbarCollapse}
-        >
+        <Collapse className="justify-content-end" navbar>
           <Nav navbar>
+            <NavItem>
+              <NavLink href="#sobre" title="Sobre o projeto" onClick={toggleNavbar}> Sobre </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#porque" title="Por que?" onClick={toggleNavbar}> Por que? </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#rota" title="Roteiro" onClick={toggleNavbar}> Roteiro </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#interesse" title="Tenho Interesse" onClick={toggleNavbar}> Tenho Interesse </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"

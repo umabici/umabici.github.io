@@ -3,6 +3,7 @@ import InterestForm from '@/components/Forms/InterestForm';
 import IndexAbout from '@/components/IndexAbout';
 import IndexBanner from '@/components/IndexBanner';
 import IndexNavbar from '@/components/IndexNavbar';
+import MapsRoute from '@/components/MapsRoute';
 import Head from 'next/head';
 import React from 'react';
 
@@ -30,6 +31,7 @@ function LandingPage() {
       <IndexNavbar />
       <IndexBanner />
       <IndexAbout />
+      <MapsRoute />
 
       <div className="main">
         <div className="section landing-section">
